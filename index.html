@@ -270,6 +270,44 @@
                 </select>
             </div>
         </div>
+        
+        <!-- KUALITAS VIDEO & DURASI -->
+        <div class="section">
+            <h2 class="section-header">KUALITAS VIDEO & DURASI (VIDEO QUALITY & DURATION)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="input-group">
+                    <label for="videoQuality">Kualitas Video (Video Quality):</label>
+                    <select id="videoQuality">
+                        <option value="">Pilih Kualitas / Select Quality</option>
+                        <option value="4K UHD">4K UHD</option>
+                        <option value="Full HD (1080p)">Full HD (1080p)</option>
+                        <option value="HD (720p)">HD (720p)</option>
+                        <option value="SD">SD</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="videoDuration">Durasi Video (Video Duration):</label>
+                    <select id="videoDuration">
+                        <option value="">Pilih Durasi / Select Duration</option>
+                        <option value="8 Detik">8 Detik (8 Seconds)</option>
+                        <option value="7 Detik">7 Detik (7 Seconds)</option>
+                        <option value="6 Detik">6 Detik (6 Seconds)</option>
+                        <option value="5 Detik">5 Detik (5 Seconds)</option>
+                        <option value="4 Detik">4 Detik (4 Seconds)</option>
+                        <option value="3 Detik">3 Detik (3 Seconds)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="videoRatio">RASIO VIDEO (VIDEO RATIO):</label>
+                    <select id="videoRatio">
+                        <option value="">Pilih Rasio / Select Ratio</option>
+                        <option value="LANDSCAPE 16:9">LANDSCAPE 16:9</option>
+                        <option value="PORTRAIT 9:16">PORTRAIT 9:16</option>
+                        <option value="SQUARE 1:1">SQUARE 1:1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
         <!-- DETAIL CERITA -->
         <div class="section">
@@ -316,7 +354,7 @@
                 <label for="atmosphere">Suasana (Atmosphere):</label>
                 <input type="text" id="atmosphere" placeholder="Contoh: Ramai, santai, suasana jalanan khas kota kecil Indonesia">
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="input-group">
                     <label for="time">Waktu (Time):</label>
                     <select id="time">
@@ -339,18 +377,6 @@
                         <option value="Salju">Salju (Snowy)</option>
                         <option value="Badai">Badai (Stormy)</option>
                         <option value="Berkabut">Berkabut (Foggy)</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="season">Musim (Season):</label>
-                    <select id="season">
-                        <option value="">Pilih Musim / Select Season</option>
-                        <option value="Musim Semi">Musim Semi (Spring)</option>
-                        <option value="Musim Panas">Musim Panas (Summer)</option>
-                        <option value="Musim Gugur">Musim Gugur (Autumn/Fall)</option>
-                        <option value="Musim Dingin">Musim Dingin (Winter)</option>
-                        <option value="Musim Hujan">Musim Hujan (Rainy Season)</option>
-                        <option value="Musim Kemarau">Musim Kemarau (Dry Season)</option>
                     </select>
                 </div>
             </div>
@@ -456,8 +482,8 @@
                 <!-- Dialogue inputs per character will be added here by JS -->
             </div>
             <div class="input-group mb-4">
-                <label for="voiceMood">Mood Suara (Voice Mood):</label>
-                <input type="text" id="voiceMood" placeholder="Contoh: Happy, Sad, Cheerful, Marah, Gugup, Tenang">
+                <label for="language">Bahasa Yang Digunakan (Language Used):</label>
+                <input type="text" id="language" placeholder="Contoh: Indonesia, Inggris, Jawa">
             </div>
             <div class="input-group mb-4">
                 <label for="environmentalSound">Suara Lingkungan (Environmental Sound):</label>
@@ -466,44 +492,6 @@
             <div class="input-group">
                 <label for="backgroundMusic">Musik Latar (Background Music):</label>
                 <input type="text" id="backgroundMusic" placeholder="Contoh: Musik orkestra dramatis, Melodi piano menenangkan, Beat EDM energik">
-            </div>
-        </div>
-
-        <!-- KUALITAS VIDEO & DURASI -->
-        <div class="section">
-            <h2 class="section-header">KUALITAS VIDEO & DURASI (VIDEO QUALITY & DURATION)</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="input-group">
-                    <label for="videoQuality">Kualitas Video (Video Quality):</label>
-                    <select id="videoQuality">
-                        <option value="">Pilih Kualitas / Select Quality</option>
-                        <option value="4K UHD">4K UHD</option>
-                        <option value="Full HD (1080p)">Full HD (1080p)</option>
-                        <option value="HD (720p)">HD (720p)</option>
-                        <option value="SD">SD</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="videoDuration">Durasi Video (Video Duration):</label>
-                    <select id="videoDuration">
-                        <option value="">Pilih Durasi / Select Duration</option>
-                        <option value="8 Detik">8 Detik (8 Seconds)</option>
-                        <option value="7 Detik">7 Detik (7 Seconds)</option>
-                        <option value="6 Detik">6 Detik (6 Seconds)</option>
-                        <option value="5 Detik">5 Detik (5 Seconds)</option>
-                        <option value="4 Detik">4 Detik (4 Seconds)</option>
-                        <option value="3 Detik">3 Detik (3 Seconds)</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="videoRatio">RASIO VIDEO (VIDEO RATIO):</label>
-                    <select id="videoRatio">
-                        <option value="">Pilih Rasio / Select Ratio</option>
-                        <option value="LANDSCAPE 16:9">LANDSCAPE 16:9</option>
-                        <option value="PORTRAIT 9:16">PORTRAIT 9:16</option>
-                        <option value="SQUARE 1:1">SQUARE 1:1</option>
-                    </select>
-                </div>
             </div>
         </div>
 
@@ -537,7 +525,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Get all input elements
-            const videoTypeStyleSelect = document.getElementById('videoTypeStyle'); // New element
+            const videoTypeStyleSelect = document.getElementById('videoTypeStyle');
             const loglineInput = document.getElementById('logline');
             const moodCheckboxes = document.querySelectorAll('input[name="mood"]');
             const otherMoodCheckbox = document.getElementById('otherMoodCheckbox');
@@ -548,7 +536,6 @@
             const atmosphereInput = document.getElementById('atmosphere');
             const timeSelect = document.getElementById('time');
             const weatherSelect = document.getElementById('weather');
-            const seasonSelect = document.getElementById('season');
             const cameraStyleSelect = document.getElementById('cameraStyle');
             const cameraMovementSelect = document.getElementById('cameraMovement');
             const cameraAngleSelect = document.getElementById('cameraAngle');
@@ -557,7 +544,7 @@
             const colorGradingSelect = document.getElementById('colorGrading');
             const dialogueTypeSelect = document.getElementById('dialogueType');
             const dialogueContentContainer = document.getElementById('dialogueContentContainer');
-            const voiceMoodInput = document.getElementById('voiceMood');
+            const languageInput = document.getElementById('language');
             const environmentalSoundInput = document.getElementById('environmentalSound');
             const backgroundMusicInput = document.getElementById('backgroundMusic');
             const videoQualitySelect = document.getElementById('videoQuality');
@@ -615,14 +602,7 @@
                 'Salju': 'Snowy',
                 'Badai': 'Stormy',
                 'Berkabut': 'Foggy',
-                // Season
-                'Musim Semi': 'Spring',
-                'Musim Panas': 'Summer',
-                'Musim Gugur': 'Autumn/Fall',
-                'Musim Dingin': 'Winter',
-                'Musim Hujan': 'Rainy Season',
-                'Musim Kemarau': 'Dry Season',
-                // Camera Style (kept the original from previous context, but will be overshadowed by videoTypeStyle if chosen for overall style)
+                // Camera Style
                 'Fotorealistik': 'Photorealistic',
                 'Animasi 3D': '3D Animation',
                 'Seni Piksel': 'Pixel Art',
@@ -697,7 +677,6 @@
                 'Misterius': 'Mysterious',
                 'Menegangkan': 'Suspenseful',
                 'Informatif': 'Informative',
-                // Custom Mood (no direct translation needed as user inputs it)
             };
 
             function translate(text) {
@@ -754,20 +733,29 @@
                 dialogueContentContainer.innerHTML = ''; // Clear existing dialogue inputs
 
                 const characterElements = document.querySelectorAll('.character-entry');
-                characterElements.forEach(charDiv => {
-                    const charId = charDiv.getAttribute('data-char-id');
-                    const charNameInput = charDiv.querySelector(`#${charId}-name`);
-                    const charName = charNameInput.value.trim();
+                const namedCharacters = Array.from(characterElements).filter(el => el.querySelector('input[id$="-name"]').value.trim() !== '');
 
-                    if (charName) {
-                        const dialogueDiv = document.createElement('div');
-                        dialogueDiv.classList.add('input-group', 'dialogue-entry', 'mb-3');
-                        dialogueDiv.innerHTML = `
-                            <label for="${charId}-dialogue">Isi Dialog Karakter "${charName}" (Dialogue Content for Character "${charName}"):</label>
-                            <textarea id="${charId}-dialogue" rows="2" placeholder="Tulis dialog di sini / Write dialogue here"></textarea>
-                        `;
-                        dialogueContentContainer.appendChild(dialogueDiv);
+                namedCharacters.forEach((charDiv, index) => {
+                    const charId = charDiv.getAttribute('data-char-id');
+                    const charName = charDiv.querySelector(`#${charId}-name`).value.trim();
+
+                    const dialogueDiv = document.createElement('div');
+                    dialogueDiv.classList.add('input-group', 'dialogue-entry', 'mb-3');
+                    
+                    let labelText;
+                    if (index === 0) {
+                        // The first character starts the conversation
+                        labelText = `Dialog Karakter ${charName} (Character ${charName} Dialogue):`;
+                    } else {
+                        // Subsequent characters respond
+                        labelText = `Karakter ${charName} menjawab (the ${charName} responds):`;
                     }
+
+                    dialogueDiv.innerHTML = `
+                        <label for="${charId}-dialogue">${labelText}</label>
+                        <textarea id="${charId}-dialogue" rows="2" placeholder="Tulis dialog di sini / Write dialogue here"></textarea>
+                    `;
+                    dialogueContentContainer.appendChild(dialogueDiv);
                 });
             }
 
@@ -788,11 +776,10 @@
 
             // --- Main Prompt Generation Logic ---
             generateBtn.addEventListener('click', () => {
-                const videoTypeStyle = videoTypeStyleSelect.value.trim(); // New variable
+                const videoTypeStyle = videoTypeStyleSelect.value.trim();
                 const logline = loglineInput.value.trim();
                 const selectedMoods = Array.from(moodCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
 
-                // Add custom mood if "Other" is checked and has a value
                 if (otherMoodCheckbox.checked && otherMoodInput.value.trim()) {
                     selectedMoods.push(otherMoodInput.value.trim());
                 }
@@ -814,7 +801,6 @@
                 const atmosphere = atmosphereInput.value.trim();
                 const time = timeSelect.value.trim();
                 const weather = weatherSelect.value.trim();
-                const season = seasonSelect.value.trim();
 
                 const cameraStyle = cameraStyleSelect.value.trim();
                 const cameraMovement = cameraMovementSelect.value.trim();
@@ -824,7 +810,7 @@
                 const colorGrading = colorGradingSelect.value.trim();
 
                 const dialogueType = dialogueTypeSelect.value.trim();
-                const voiceMood = voiceMoodInput.value.trim();
+                const language = languageInput.value.trim();
                 const environmentalSound = environmentalSoundInput.value.trim();
                 const backgroundMusic = backgroundMusicInput.value.trim();
 
@@ -850,6 +836,20 @@
                 }
                 if (videoGeneralSettingsId.length > 0) {
                     partsId.push(videoGeneralSettingsId.join(' | '));
+                }
+                
+                // Video Quality & Duration
+                if (videoQuality) {
+                    videoSpecPartsId.push(`Kualitas video: ${videoQuality}`);
+                }
+                if (videoDuration) {
+                    videoSpecPartsId.push(`Durasi: ${videoDuration}`);
+                }
+                if (videoRatio) {
+                    videoSpecPartsId.push(`Rasio video: ${videoRatio}`);
+                }
+                 if (videoSpecPartsId.length > 0) {
+                    partsId.push(`Video: ${videoSpecPartsId.join(', ')}`);
                 }
 
                 // Story Details
@@ -895,15 +895,12 @@
                 if (weather) {
                     settingPartsId.push(`Cuaca: ${weather}`);
                 }
-                if (season) {
-                    settingPartsId.push(`Musim: ${season}`);
-                }
                 if (settingPartsId.length > 0) {
                     partsId.push(`Setting: ${settingPartsId.join(', ')}`);
                 }
 
-                // Camera (this is now more granular than videoTypeStyle, consider merging if similar)
-                if (cameraStyle) { // This `cameraStyle` might overlap with `videoTypeStyle`
+                // Camera
+                if (cameraStyle) {
                     cameraPartsId.push(`Gaya kamera: ${cameraStyle}`);
                 }
                 if (cameraMovement) {
@@ -930,14 +927,16 @@
                     audioPartsId.push(`Dialog: ${dialogueType}`);
                 }
                 if (dialogueType && dialogueType !== 'Tanpa dialog') {
-                    charactersData.forEach(char => {
-                        if (char.name && char.dialogue) {
-                            audioPartsId.push(`Dialog Karakter ${char.name}: "${char.dialogue}"`);
+                    const dialogueCharacters = charactersData.filter(char => char.name && char.dialogue);
+                    if (dialogueCharacters.length > 0) {
+                        audioPartsId.push(`Dialog Karakter ${dialogueCharacters[0].name}: "${dialogueCharacters[0].dialogue}"`);
+                        for (let i = 1; i < dialogueCharacters.length; i++) {
+                            audioPartsId.push(`karakter ${dialogueCharacters[i].name} menjawab: "${dialogueCharacters[i].dialogue}"`);
                         }
-                    });
+                    }
                 }
-                if (voiceMood) {
-                    audioPartsId.push(`Mood suara: ${voiceMood}`);
+                if (language) {
+                    audioPartsId.push(`Bahasa: ${language}`);
                 }
                 if (environmentalSound) {
                     audioPartsId.push(`Suara lingkungan: ${environmentalSound}`);
@@ -947,20 +946,6 @@
                 }
                 if (audioPartsId.length > 0) {
                     partsId.push(`Audio: ${audioPartsId.join(', ')}`);
-                }
-
-                // Video Quality & Duration
-                if (videoQuality) {
-                    videoSpecPartsId.push(`Kualitas video: ${videoQuality}`);
-                }
-                if (videoDuration) {
-                    videoSpecPartsId.push(`Durasi: ${videoDuration}`);
-                }
-                if (videoRatio) {
-                    videoSpecPartsId.push(`Rasio video: ${videoRatio}`);
-                }
-                 if (videoSpecPartsId.length > 0) {
-                    partsId.push(`Video: ${videoSpecPartsId.join(', ')}`);
                 }
 
                 // Additional Details
@@ -993,13 +978,26 @@
                 if (videoGeneralSettingsEn.length > 0) {
                     partsEn.push(videoGeneralSettingsEn.join(' | '));
                 }
+                
+                // Video Quality & Duration
+                if (videoQuality) {
+                    videoSpecPartsEn.push(`Video quality: ${translate(videoQuality)}`);
+                }
+                if (videoDuration) {
+                    videoSpecPartsEn.push(`Duration: ${translate(videoDuration)}`);
+                }
+                if (videoRatio) {
+                    videoSpecPartsEn.push(`Video ratio: ${translate(videoRatio)}`);
+                }
+                 if (videoSpecPartsEn.length > 0) {
+                    partsEn.push(`Video: ${videoSpecPartsEn.join(', ')}`);
+                }
 
                 // Story Details
                 if (logline) {
                     storyPartsEn.push(`Logline: ${logline}`); // Logline is often kept as is
                 }
                 if (selectedMoods.length > 0) {
-                    // Translate standard moods, keep custom mood as is
                     const translatedMoods = selectedMoods.map(mood => translate(mood));
                     storyPartsEn.push(`Mood: ${translatedMoods.join(', ')}`);
                 }
@@ -1039,9 +1037,6 @@
                 if (weather) {
                     settingPartsEn.push(`Weather: ${translate(weather)}`);
                 }
-                if (season) {
-                    settingPartsEn.push(`Season: ${translate(season)}`);
-                }
                 if (settingPartsEn.length > 0) {
                     partsEn.push(`Setting: ${settingPartsEn.join(', ')}`);
                 }
@@ -1074,14 +1069,16 @@
                     audioPartsEn.push(`Dialogue: ${translate(dialogueType)}`);
                 }
                 if (dialogueType && dialogueType !== 'Tanpa dialog') {
-                    charactersData.forEach(char => {
-                        if (char.name && char.dialogue) {
-                            audioPartsEn.push(`Character ${char.name}'s Dialogue: "${char.dialogue}"`); // Dialogue content remains as is
+                    const dialogueCharacters = charactersData.filter(char => char.name && char.dialogue);
+                    if (dialogueCharacters.length > 0) {
+                        audioPartsEn.push(`Character ${dialogueCharacters[0].name} Dialogue: "${dialogueCharacters[0].dialogue}"`);
+                        for (let i = 1; i < dialogueCharacters.length; i++) {
+                            audioPartsEn.push(`the ${dialogueCharacters[i].name} responds: "${dialogueCharacters[i].dialogue}"`);
                         }
-                    });
+                    }
                 }
-                if (voiceMood) {
-                    audioPartsEn.push(`Voice mood: ${voiceMood}`);
+                if (language) {
+                    audioPartsEn.push(`Language: ${language}`);
                 }
                 if (environmentalSound) {
                     audioPartsEn.push(`Environmental sound: ${environmentalSound}`);
@@ -1091,20 +1088,6 @@
                 }
                 if (audioPartsEn.length > 0) {
                     partsEn.push(`Audio: ${audioPartsEn.join(', ')}`);
-                }
-
-                // Video Quality & Duration
-                if (videoQuality) {
-                    videoSpecPartsEn.push(`Video quality: ${translate(videoQuality)}`);
-                }
-                if (videoDuration) {
-                    videoSpecPartsEn.push(`Duration: ${translate(videoDuration)}`);
-                }
-                if (videoRatio) {
-                    videoSpecPartsEn.push(`Video ratio: ${translate(videoRatio)}`);
-                }
-                 if (videoSpecPartsEn.length > 0) {
-                    partsEn.push(`Video: ${videoSpecPartsEn.join(', ')}`);
                 }
 
                 // Additional Details
